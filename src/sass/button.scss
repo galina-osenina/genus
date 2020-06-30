@@ -1,0 +1,14 @@
+.button {
+  font-size: 14px;
+  color: $text-color-primary;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  padding: 17px 30px;
+}
+
+.button_bg {
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+}
