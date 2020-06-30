@@ -12,6 +12,17 @@
 .h2 {
   font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+}
+
+.h2_width_limit {
+  max-width: 640px;
+}
+
+.h3 {
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
 }

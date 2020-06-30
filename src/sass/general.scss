@@ -98,3 +98,26 @@ body {
     margin-right: 0;
   }
 }
+
+.row-3-1 {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.col-1 {
+  flex: 1;
+  padding: 40px;
+}
+
+.col-3 {
+  flex: 3;
+}
+
+.col_align_center {
+  text-align: center;
+}
