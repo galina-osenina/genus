@@ -81,17 +81,18 @@
   bottom: 0;
   padding: 10px 60px 10px 20px;
   transition: left 0.5s;
-}
 
-.header__nav_visible {
   @media (max-width: $tablet) {
-    left: 0;
     background-color: $color-primary;
 
     .nav-list__link {
       color: #fff!important;
     }
   }
+}
+
+.header__nav_visible {
+  left: 0;
 }
 
 .body_fixed {
