@@ -2,12 +2,14 @@
   background-color: #fff;
   padding: 22px;
   color: $text-color-secondary;
+  border-radius: 3px;
 }
 
 .form__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .form__icon {
@@ -86,11 +88,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .form__button {
   margin-right: 20px;
   padding: 13px 20px;
+  white-space: nowrap;
 }
 
 .form__link {
