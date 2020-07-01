@@ -132,12 +132,12 @@ p {
   text-align: center;
 }
 
-.recognition-text {
+.entry-text {
   font-size: 18px;
-  font-weight: 700;
+  max-width: 912px;
 }
 
-.clients-list {
+.images {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -145,10 +145,9 @@ p {
   margin: 55px 0;
 }
 
-.client {
+.images__item {
   max-width: 140px;
-  margin-right: 80px;
-  margin-bottom: 20px;
+  margin: 10px 80px 10px 0;
 
   &:last-child {
     margin-right: 0;
@@ -223,5 +222,10 @@ p {
 .cite__name {
   font-weight: 700;
 }
+
+.button-quote {
+  margin-top: 60px;
+}
+
 
 
