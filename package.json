@@ -9,6 +9,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://galina-osenina.github.io/genus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galina-osenina/genus.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",

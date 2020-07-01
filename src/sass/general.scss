@@ -47,12 +47,25 @@ p {
   padding: 30px 0;
 
   @media (min-width: $tablet) {
-    padding: 60px 0px;
+    padding: 40px 0px;
   }
 }
 
 .section_bg {
   background-color: $color-secondary;
+}
+
+.section-contact {
+  color: #fff;
+  background-color: $color-primary;
+}
+
+.intro {
+  padding-top: 90px;
+
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+  }
 }
 
 .intro__inner {
@@ -125,6 +138,12 @@ p {
   @media (min-width: $tablet) {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+.row_align_start {
+  @media (min-width: $tablet) {
+    align-items: flex-start;
   }
 }
 
@@ -273,7 +292,7 @@ p {
 }
 
 .section-info__icon {
-  margin-bottom: 40px;
+  margin: 40px 0px;
 }
 
 .section-info__button {
@@ -289,12 +308,8 @@ p {
 
 .image-list__item {
   max-width: 290px;
-  margin-right: 20px;
+  margin: 5px;
   border-radius: 3px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .address {

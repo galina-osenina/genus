@@ -84,7 +84,14 @@
 }
 
 .header__nav_visible {
-  left: 0;
+  @media (max-width: $tablet) {
+    left: 0;
+    background-color: $color-primary;
+
+    .nav-list__link {
+      color: #fff!important;
+    }
+  }
 }
 
 .body_fixed {

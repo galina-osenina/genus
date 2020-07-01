@@ -1,13 +1,13 @@
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   @media (min-width: $tablet) {
     margin: 0px -20px;
   }
 
-  .card {
+  .card:not(.card_bg_color) {
     &:nth-child(1) {
       .card__icon {
         background-color: #f4976c;
@@ -56,6 +56,80 @@
       }
     }
   }
+
+  .card_bg_color {
+    &:nth-child(1) {
+      background-color: #f4976c;
+
+      .card__icon {
+        color: #f4976c;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: #cfbc81;
+
+      .card__icon {
+        color: #cfbc81;
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: #3aafa9;
+
+      .card__icon {
+        color: #3aafa9;
+      }
+    }
+
+    &:nth-child(4) {
+      background-color: #b39ddb;
+
+      .card__icon {
+        color: #b39ddb;
+      }
+    }
+
+    &:nth-child(5) {
+      background-color: #4d6e9b;
+
+      .card__icon {
+        color: #4d6e9b;
+      }
+    }
+
+    &:nth-child(6) {
+      background-color: #f48fb1;
+
+      .card__icon {
+        color: #f48fb1;
+      }
+    }
+
+    &:nth-child(7) {
+      background-color: #479860;
+
+      .card__icon {
+        color: #479860;
+      }
+    }
+
+    &:nth-child(8) {
+      background-color: #5de5e0;
+
+      .card__icon {
+        color: #5de5e0;
+      }
+    }
+
+    .card__icon {
+      background-color: #fff;
+    }
+  }
+}
+
+.card-list_mt {
+  margin-top: 50px;
 }
 
 .card {
@@ -84,42 +158,6 @@
   }
 }
 
-.card_color_1 {
-  background-color: #f4976c;
-
-  .card__icon {
-    background-color: #fff!important;
-    color: #f4976c;
-  }
-}
-
-.card_color_2 {
-  background-color: #cfbc81;
-
-  .card__icon {
-    background-color: #fff!important;
-    color: #cfbc81;
-  }
-}
-
-.card_color_3 {
-  background-color: #3aafa9;
-
-  .card__icon {
-    background-color: #fff!important;
-    color: #3aafa9;
-  }
-}
-
-.card_color_4 {
-  background-color: #b39ddb;
-
-  .card__icon {
-    background-color: #fff!important;
-    color: #b39ddb;
-  }
-}
-
 .card__icon {
   display: flex;
   justify-content: center;
@@ -134,30 +172,6 @@
 
 .card__title {
   margin-bottom: 15px;
-}
-
-@mixin color-card($color) {
-  background-color: $color;
-
-  .card__icon {
-    color: $color;
-  }
-}
-
-.card-web {
-  @include color-card(#f4976c);
-}
-
-.card-mobile {
-  @include color-card(#cfbc81);
-}
-
-.card-qa {
-  @include color-card(#3aafa9);
-}
-
-.card-design {
-  @include color-card(#b39ddb);
 }
 
 .card_bg_image {
