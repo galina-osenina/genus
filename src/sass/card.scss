@@ -4,20 +4,119 @@
   justify-content: space-between;
 
   @media (min-width: $tablet) {
-    margin: 58px -20px;
+    margin: 0px -20px;
+  }
+
+  .card {
+    &:nth-child(1) {
+      .card__icon {
+        background-color: #f4976c;
+      }
+    }
+
+    &:nth-child(2) {
+      .card__icon {
+        background-color: #cfbc81;
+      }
+    }
+
+    &:nth-child(3) {
+      .card__icon {
+        background-color: #3aafa9;
+      }
+    }
+
+    &:nth-child(4) {
+      .card__icon {
+        background-color: #b39ddb;
+      }
+    }
+
+    &:nth-child(5) {
+      .card__icon {
+        background-color: #4d6e9b;
+      }
+    }
+
+    &:nth-child(6) {
+      .card__icon {
+        background-color: #f48fb1;
+      }
+    }
+
+    &:nth-child(7) {
+      .card__icon {
+        background-color: #479860;
+      }
+    }
+
+    &:nth-child(8) {
+      .card__icon {
+        background-color: #5de5e0;
+      }
+    }
   }
 }
 
 .card {
   width: 100%;
   background-color: $color-tertiary;
+  color: #fff;
   padding: 16px;
   margin: 10px 0;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media (min-width: $tablet) {
     width: 290px;
     margin: 10px;
+  }
+}
+
+.card_bg_light {
+  color: #1d1d1d;
+  background-color: #eae9eb;
+
+  .card__icon {
+    color: #fff;
+  }
+}
+
+.card_color_1 {
+  background-color: #f4976c;
+
+  .card__icon {
+    background-color: #fff!important;
+    color: #f4976c;
+  }
+}
+
+.card_color_2 {
+  background-color: #cfbc81;
+
+  .card__icon {
+    background-color: #fff!important;
+    color: #cfbc81;
+  }
+}
+
+.card_color_3 {
+  background-color: #3aafa9;
+
+  .card__icon {
+    background-color: #fff!important;
+    color: #3aafa9;
+  }
+}
+
+.card_color_4 {
+  background-color: #b39ddb;
+
+  .card__icon {
+    background-color: #fff!important;
+    color: #b39ddb;
   }
 }
 
@@ -31,38 +130,6 @@
   background-color: #fff;
   border-radius: 50%;
   margin-bottom: 20px;
-
-  &.card__icon-healthcare {
-    background-color: #f4976c;
-  }
-
-  &.card__icon-logistics {
-    background-color: #cfbc81;
-  }
-
-  &.card__icon-engineering {
-    background-color: #3aafa9;
-  }
-
-  &.card__icon-ecommerce {
-    background-color: #b39ddb;
-  }
-
-  &.card__icon-media {
-    background-color: #4d6e9b;
-  }
-
-  &.card__icon-fashion {
-    background-color: #f48fb1;
-  }
-
-  &.card__icon-sports {
-    background-color: #479860;
-  }
-
-  &.card__icon-fintech {
-    background-color: #5de5e0;
-  }
 }
 
 .card__title {
@@ -101,9 +168,6 @@
   position: relative;
   min-height: 432px;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   z-index: 1;
 
   &:before {
@@ -171,6 +235,24 @@
   }
 }
 
+.card__text_mb {
+  margin-bottom: 30px;
+}
+
+.card__list {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.card__list_col_3 {
+  column-count: 3;
+}
+
+.card__list_col_2 {
+  column-count: 2;
+  column-width: 110px;
+}
+
 .card__button {
-  margin-top: 12px;
+  margin-top: auto;
 }

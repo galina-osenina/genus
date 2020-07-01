@@ -3,13 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(55, 70, 81, 0.85);
-  z-index: 1000;
-  transition: background-color linear 1s;
-}
-
-.header_bg_dark {
   background-color: $color-primary;
+  z-index: 1000;
 }
 
 .header__container {
@@ -84,7 +79,6 @@
   left: -100%;
   width: 100%;
   bottom: 0;
-  background-color: $color-primary;
   padding: 10px 60px 10px 20px;
   transition: left 0.5s;
 }
