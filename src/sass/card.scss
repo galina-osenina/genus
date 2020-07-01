@@ -28,6 +28,7 @@
   font-size: 34px;
   width: 60px;
   height: 60px;
+  background-color: #fff;
   border-radius: 50%;
   margin-bottom: 20px;
 
@@ -66,4 +67,32 @@
 
 .card__title {
   margin-bottom: 20px;
+}
+
+@mixin color-card($color) {
+  background-color: $color;
+
+  .card__icon {
+    color: $color;
+  }
+}
+
+.card-web {
+  @include color-card(#f4976c);
+}
+
+.card-mobile {
+  @include color-card(#cfbc81);
+}
+
+.card-qa {
+  @include color-card(#3aafa9);
+}
+
+.card-design {
+  @include color-card(#b39ddb);
+}
+
+.card__button {
+  margin-top: 12px;
 }
