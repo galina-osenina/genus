@@ -60,12 +60,8 @@ p {
   background-color: $color-primary;
 }
 
-.intro {
-  padding-top: 90px;
-
-  @media (min-width: $tablet) {
-    padding-top: 100px;
-  }
+main {
+  padding-top: 60px;
 }
 
 .intro__inner {

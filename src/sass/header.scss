@@ -141,3 +141,23 @@
   padding: 10px 20px;
   text-decoration: none;
 }
+
+.header__nav-list .nav-list__link {
+
+  @media (min-width: $tablet) {
+    padding: 15px 20px;
+    border: 2px solid transparent;
+  }
+
+  &:hover,
+  &:focus,
+  &.nav-list__link_active {
+    @media (max-width: $tablet - 1) {
+      color: $color-secondary!important;
+    }
+
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $color-secondary;
+    }
+  }
+}

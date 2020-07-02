@@ -250,13 +250,29 @@
   }
 }
 
+.card__text {
+  width: 100%;
+}
+
 .card__text_mb {
   margin-bottom: 30px;
+}
+
+.technology-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .card__list {
   list-style-type: none;
   font-size: 12px;
+
+  li:before {
+    content: '•';
+    color: #b39ddb;
+    margin-right: 5px;
+  }
 }
 
 .card__list_col_3 {

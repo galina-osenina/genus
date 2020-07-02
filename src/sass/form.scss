@@ -110,3 +110,9 @@
 .label-pointer {
   cursor: pointer;
 }
+
+.form-contact {
+  @media (min-width: $tablet) {
+    max-width: 80%;
+  }
+}
