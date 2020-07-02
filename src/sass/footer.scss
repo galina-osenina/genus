@@ -23,5 +23,10 @@
 
 .footer__copyright {
   font-size: 14px;
-  color: rgb(179, 179, 179);
+  color: rgba(179, 179, 179, 0.2);
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }

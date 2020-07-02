@@ -25,10 +25,17 @@ $(function() {
   });
 
   $('.js-contact-btn').on('click', function (e) {
-      var _target = $('.js-form-contact')
+      var _target = $('.js-form-contact');
 
       if( _target.length ) {
           e.preventDefault();
+
+          if ($('.header__nav_visible').length) {
+              $('.menu-button').toggleClass('menu-button_open');
+              $('.header__nav').toggleClass('header__nav_visible');
+              $('body').toggleClass('body_fixed');
+          }
+
           $('html, body').animate({
               scrollTop: _target.offset().top
           }, 500);
