@@ -1,3 +1,8 @@
+a:hover,
+a:focus {
+  outline: 0;
+}
+
 .button {
   font-size: 14px;
   line-height: 1;
@@ -8,8 +13,10 @@
   border-radius: 3px;
   padding: 13px 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: #fff;
+    outline: 0;
   }
 }
 

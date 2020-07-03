@@ -11,8 +11,19 @@
 }
 
 .footer__nav-list {
-  column-count: 2;
-  column-width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__col {
+  margin-right: 30px;
+  list-style-type: none;
+  padding-left: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer__nav-list .nav-list__item:hover {

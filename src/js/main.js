@@ -1,5 +1,6 @@
 //= ../../node_modules/@fortawesome/fontawesome-free/js/all.js
 //= ../../node_modules/jquery/dist/jquery.min.js
+//= ../../node_modules/jquery-validation/dist/jquery.validate.js
 
 $(function() {
 
@@ -41,5 +42,27 @@ $(function() {
           }, 500);
       }
   });
+
+    $(".js-form-contact").validate({
+        rules: {
+            name: "required",
+            email: "required"
+        },
+        messages: {
+            name: "This field is required",
+            email: "This field is required"
+        },
+        highlight: function(element, errorClass) {
+            return false;
+        },
+        submitHandler: function () {
+            $('.form__input').val('');
+            $('.form__input').blur();
+            $('.form__footer').append('<div class="form__output">Your message has been sent.</div>');
+            setTimeout(function() {
+                $('.form__output').remove();
+            }, 3000);
+        }
+    });
 
 });
