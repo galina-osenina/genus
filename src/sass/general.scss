@@ -55,6 +55,10 @@ p {
   background-color: $color-secondary;
 }
 
+.section-stretch {
+  min-height: calc(100vh - 60px - 222px);
+}
+
 .section-contact {
   color: #fff;
   background-color: $color-primary;

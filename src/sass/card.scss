@@ -147,6 +147,11 @@
     width: 290px;
     margin: 10px;
   }
+
+  @media (min-width: $tablet) and (max-width: $desctop) {
+    width: 30%;
+  }
+
 }
 
 .card_bg_light {
