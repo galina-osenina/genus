@@ -164,6 +164,12 @@
   }
 }
 
+.card_size_md {
+  @media (min-width: $tablet) {
+    width: 31%
+  }
+}
+
 .card__icon {
   display: flex;
   justify-content: center;
