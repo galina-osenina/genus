@@ -25,6 +25,25 @@ $(function() {
     }
   });
 
+    function submitForm () {
+        $.ajax({
+            url: '',
+            type: 'POST',
+            dataType: 'json',
+            success: function () {
+                $('.form__input').val('');
+                $('.form__input').blur();
+                $('.form__footer').append('<div class="form__output">Your message has been sent.</div>');
+                setTimeout(function() {
+                    $('.form__output').remove();
+                }, 3000);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('.form__footer').append('<div class="form__output form__output_error">Something went wrong. Please try again later</div>');
+            }
+        })
+    }
+
   $('.js-contact-btn').on('click', function (e) {
       var _target = $('.js-form-contact');
 
@@ -62,6 +81,7 @@ $(function() {
             setTimeout(function() {
                 $('.form__output').remove();
             }, 3000);
+            //submitForm();
         }
     });
 
