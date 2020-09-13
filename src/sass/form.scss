@@ -113,12 +113,6 @@
   cursor: pointer;
 }
 
-.form-contact {
-  @media (min-width: $tablet) {
-    max-width: 80%;
-  }
-}
-
 .form__placeholder--required:after {
   content: '*';
   color: $color-secondary;

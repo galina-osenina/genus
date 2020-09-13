@@ -110,12 +110,10 @@ main {
 
 .intro__img {
   display: block;
-  max-width: 90%;
-  max-height: 300px;
+  max-width: 100%;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    max-height: none;
     padding-left: 40px;
   }
 }
@@ -429,5 +427,8 @@ main {
   }
 }
 
+.section-map {
+  margin-bottom: -8px;
+}
 
 
