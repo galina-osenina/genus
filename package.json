@@ -1,5 +1,5 @@
 {
-  "name": "Pythonstars",
+  "name": "ITgenus",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galina-osenina/pythonstars.git"
+    "url": "git+https://github.com/galina-osenina/genus.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
