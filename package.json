@@ -1,5 +1,5 @@
 {
-  "name": "ITgenus",
+  "name": "Pythonstars",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galina-osenina/genus.git"
+    "url": "git+https://github.com/galina-osenina/pythonstars.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^9.7.4",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.5",
     "cross-env": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
@@ -45,6 +45,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "jquery": "^3.5.1",
-    "jquery-validation": "^1.19.2"
+    "jquery-validation": "^1.19.3"
   }
 }
